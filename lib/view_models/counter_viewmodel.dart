@@ -11,10 +11,6 @@ final counterViewModelProvider =
     StateNotifierProvider.autoDispose<CounterViewModel, CounterViewState>(
         (ref) => locator.get<CounterViewModel>());
 
-final counterCounterViewModelProvider =
-StateNotifierProvider.autoDispose<CounterViewModel, CounterViewState>(
-        (ref) => locator.get<CounterViewModel>());
-
 class CounterViewModel extends BaseViewModel<CounterViewState> {
   CounterViewModel(
     NavigationService navigationService,
