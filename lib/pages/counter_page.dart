@@ -25,8 +25,8 @@ class CounterPage extends HookWidget {
 
   Widget buildOddNumberList() {
     return HookBuilder(builder: (context) {
-      //final List<int> oddNumbers = useProvider(oddNumbersProvider);
-      final List<int> oddNumbers = useProvider(counterViewModelProvider).oddNumbers;
+      final List<int> oddNumbers = useProvider(oddNumbersProvider);
+      
       return SizedBox(
         height: 50,
         child: ListView.builder(
@@ -52,8 +52,8 @@ class CounterPage extends HookWidget {
 
   Widget builEvenNumberList() {
     return HookBuilder(builder: (context) {
-      //final List<int> evenNumbers = useProvider(evenNumbersProvider);
-      final List<int> evenNumbers = useProvider(counterViewModelProvider).evenNumbers;
+      final List<int> evenNumbers = useProvider(evenNumbersProvider);
+      
       return Expanded(
         child: SizedBox(
           height: double.infinity,
