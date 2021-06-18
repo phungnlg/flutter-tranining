@@ -84,7 +84,6 @@ class CounterPage extends HookWidget {
   final oddNumbersProvider = Provider.autoDispose((ref) => ref.watch(counterViewModelProvider).oddNumbers);
   final evenNumbersProvider = Provider.autoDispose((ref) => ref.watch(counterViewModelProvider).evenNumbers);
 
-
   Widget buildTextCounter() {
     return HookBuilder(builder: (context) {
       final int counterValue = useProvider(counterValueProvider);

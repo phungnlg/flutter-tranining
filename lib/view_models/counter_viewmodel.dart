@@ -29,6 +29,6 @@ class CounterViewModel extends BaseViewModel<CounterViewState> {
       oddNumbers.add(count);
     }
 
-    state = CounterViewState(count, evenNumbers, oddNumbers);
+    state = CounterViewState(count, [...evenNumbers], [...oddNumbers]);
   }
 }
